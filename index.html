@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎬 Tunglish Interpreter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎬 Tunglish Interpreter</h1>
+
+  <div class="container">
+    <div class="editor-section">
+      <label for="editor">Write Tunglish Code:</label>
+      <textarea id="editor" placeholder='sollu("Vanakkam da mapla")'></textarea>
+      <div class="button-group">
+        <button type="button" onclick="runCode()">▶️ Run</button>
+        <button type="button" onclick="showHelp()">🧠 Keywords Help</button>
+      </div>
+    </div>
+
+    <div class="side-section">
+      <h3>💡 Translated Python:</h3>
+      <pre id="translatedCode"></pre>
+    </div>
+  </div>
+
+  <div class="output-section">
+    <h3>📤 Output:</h3>
+    <pre id="outputBox"></pre>
+  </div>
+
+  <!-- Keyword Help Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span class="close" onclick="hideHelp()">&times;</span>
+      <h2>Tunglish Keywords</h2>
+      <table>
+        <tr><th>Tunglish</th><th>Python</th></tr>
+        <tr><td>varunga</td><td>=</td></tr>
+        <tr><td>sollu</td><td>print()</td></tr>
+        <tr><td>nalla_irundha</td><td>if</td></tr>
+        <tr><td>illa_na</td><td>else</td></tr>
+        <tr><td>pirichu</td><td>elif</td></tr>
+        <tr><td>saar</td><td>def</td></tr>
+        <tr><td>mudichachu</td><td>return</td></tr>
+        <tr><td>varuven</td><td>while</td></tr>
+        <tr><td>paaru</td><td>input()</td></tr>
+        <tr><td>poitu varen</td><td>break</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
